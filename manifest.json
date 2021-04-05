@@ -1,0 +1,21 @@
+{
+    "name": "scrapbox-paper-manage",
+    "version": "1.0.0",
+    "manifest_version": 2,
+    "description": "Extention for extracting basic imformation from arxiv and saving it to scrapbox",
+    "background": {
+        "scripts": ["src/event.js"],
+        "persistent": false
+    },
+    "permissions": [
+        "tabs",
+        "activeTab",
+        "contextMenus"
+    ],
+    "content_scripts": [{
+        "matches": ["*://*.arxiv.org/abs/*", "<all_urls>"],
+        "js": [
+            "src/content.js"
+        ]
+    }]
+}

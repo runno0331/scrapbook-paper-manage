@@ -1,1 +1,2 @@
-# scrapbook-paper-manage
+# scrapbox-paper-manage
+scrapbox上で論文を管理するときに論文の基本情報を含むページをいちいちコピペして作るのが面倒くさかったので，拡張機能として実装した．現状arxiv専用．
